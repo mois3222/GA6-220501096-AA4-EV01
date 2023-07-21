@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.1.1",
     "html-loader": "^4.2.0",
     "sass": "^1.64.0",
     "typescript": "^5.0.2",

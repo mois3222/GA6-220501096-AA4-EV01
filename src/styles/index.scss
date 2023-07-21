@@ -1,5 +1,1 @@
-.header {
-  &__ul {
-    list-style: none;
-  }
-}
+@forward "./header.scss";
