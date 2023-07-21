@@ -1,8 +1,9 @@
+import Router from "./routes/Routes";
 import "./styles/index.scss";
 import "./styles/normalize.css";
-import Router from "./routes/Routes";
 
-const router = new Router();
+const router = Router.createInstace();
+console.log(router);
 
 window.addEventListener("load", router.render);
 window.addEventListener("hashchange", router.render);
