@@ -13,6 +13,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+
     "noEmit": true,
 
     /* Linting */
@@ -22,5 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "html.d.ts", "vite.config.js"]
 }

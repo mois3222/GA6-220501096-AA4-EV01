@@ -1,22 +1,25 @@
-//define a class for navbar rendering
-class Navbar {
+/**
+ * @class
+ * @classdesc This's implementation of Header however it is a template specifically will always be in the website.
+ */
+class Header {
   protected navbar: HTMLElement;
   constructor() {
-    this.navbar = document.createElement("nav");
-    this.navbar.className = "navbar";
+    this.navbar = document.createElement("header");
+    this.navbar.className = "header";
   }
 
   rendered() {
     this.navbar.innerHTML = `
-    <ul class="navbar__ul ul">
-        <li class="navbar__li--ul"></li>    
-        <li class="navbar__li--ul"></li>
-        <li class="navbar__li--ul"></li>
-    </ul>
+    <nav class="header__nav">
+        <ul class="header__ul ul">
+          
+        </ul>    
+    </nav>
     `;
 
     return this.navbar;
   }
 }
 
-export default Navbar;
+export default Header;

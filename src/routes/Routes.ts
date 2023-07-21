@@ -1,6 +1,6 @@
 import getHash from "../utils/getHash";
 import resolveHash from "../utils/resolveHash";
-import Navbar from "../templates/Header";
+import Header from "../templates/Header";
 
 //root of website
 export const $root: HTMLElement | null =
@@ -17,7 +17,7 @@ class Router {
     let hash = getHash(),
       route = resolveHash(hash);
 
-    const navbar = new Navbar();
+    const navbar = new Header();
 
     this.root?.appendChild(navbar.rendered());
   }
