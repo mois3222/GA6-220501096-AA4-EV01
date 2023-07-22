@@ -3,15 +3,8 @@
  * @classdesc This's implementation of Header however it is a template specifically will always be in the website.
  */
 class Header {
-  protected header: HTMLElement;
-
-  constructor() {
-    this.header = document.createElement("header");
-    this.header.className = "header";
-  }
-
-  rendered() {
-    this.header.innerHTML = `
+  static returnHTMLElement() {
+    const HTMLNavElement: string = `
     <nav class="header__nav">
         <ul class="header__ul">
           <li class="header__li">
@@ -29,18 +22,14 @@ class Header {
           </li>
         </ul>    
         </nav>
-        <nav class="header__nav--slider nav" style="transform: translateX(50%);">
+        <nav class="header__nav--slider" id="nav" style="transform: translateX(50%);">
           <ul class="header__ul--nav" >
 
           </ul>
         </nav>
     `;
 
-    return this.header;
-  }
-
-  getHTMLElementHeader() {
-    return this.header;
+    return HTMLNavElement;
   }
 }
 

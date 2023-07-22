@@ -47,6 +47,8 @@
     position: absolute;
     z-index: -1;
     width: 200%;
+    transition: 500ms all ease-out;
+    border: 1px solid v.$primary-color;
   }
 
   &__ul--nav {

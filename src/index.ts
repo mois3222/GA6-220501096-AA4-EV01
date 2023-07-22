@@ -1,13 +1,19 @@
-import Router from "./routes/Routes";
 import "./styles/index.scss";
 import "./styles/normalize.css";
+import Header from "./templates/Header";
+import toggleClick from "./utils/toggle";
 
-/**
- * This const save the instance of class Router, Router is a singleton.
- * @type {Router}
- */
-const router = Router.createInstace();
+window.addEventListener("load", () => {
+  document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
+    <header class="header">
+        ${Header.returnHTMLElement()}
+    </header>
+    <main class="main">
+    
+    </main>
+    <footer class="footer"></footer>
 
-window.addEventListener("load", router.render);
+    `;
 
-window.addEventListener("hashchange", router.render);
+  toggleClick(document.querySelector<HTMLElement>("#nav")!);
+});
