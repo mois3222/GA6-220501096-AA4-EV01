@@ -1,10 +1,10 @@
 import getHash from "../utils/getHash";
 import resolveHash from "../utils/resolveHash";
 import Header from "../templates/Header";
+import toggleClick from "../utils/toggle";
 
 //root of website
-export const $root: HTMLElement | null =
-  document.querySelector<"header">("header");
+const $root: HTMLElement | null = document.querySelector<"header">("header");
 
 class Router {
   private static instance: Router | null = null;
@@ -14,12 +14,13 @@ class Router {
     this.root = $root;
   }
   render() {
+    toggleClick();
     let hash = getHash(),
       route = resolveHash(hash);
 
-    const navbar = new Header();
+    const header = new Header();
 
-    this.root?.appendChild(navbar.rendered());
+    this.root?.appendChild(header.rendered());
   }
 
   static createInstace() {
