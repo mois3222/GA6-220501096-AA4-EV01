@@ -27,7 +27,7 @@ class Footer {
                     </li>
                 </ul>
             </div>
-            <div class="footer__div--bottom">
+            <div class="footer__div--buttom">
                 <p class="footer__p">copyright &copy;2023. designe by <span class="footer__span">TheMoidbytes</span></p>
             </div>
         `;
