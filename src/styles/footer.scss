@@ -1,0 +1,53 @@
+@use "./extend.scss";
+@use "./vars.scss" as v;
+.footer {
+  @extend %flex-col;
+  background-color: v.$footer;
+  font-family: v.$theme-font;
+  color: v.$theme-color;
+
+  &__div {
+    @extend %flex-col;
+  }
+
+  &__h3 {
+    @extend %cleanMP;
+    font-weight: bolder;
+  }
+
+  &__p {
+    @extend %cleanMP;
+    text-align: center;
+    font-size: v.$min;
+  }
+
+  &__ul {
+    @extend %flex;
+    @extend %cleanMP;
+    justify-content: space-around;
+    width: 100%;
+
+    list-style: none;
+  }
+
+  &__a {
+    @extend %bottom;
+    text-decoration: none;
+  }
+
+  &__svg {
+    fill: v.$danger-color;
+  }
+
+  &__h4 {
+    @extend %cleanMP;
+    color: v.$danger-color;
+    margin: 0.4em 0;
+    padding: 0;
+    font-size: v.$sm;
+  }
+
+  &__div--bottom {
+    margin: 0.5em 0;
+  }
+}

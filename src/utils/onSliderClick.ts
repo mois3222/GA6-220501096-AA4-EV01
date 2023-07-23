@@ -1,6 +1,5 @@
-let toggle = false;
-
-const toggleClick = (element: HTMLElement) => {
+const onSliderClick = (element: HTMLElement) => {
+  let toggle = false;
   document.addEventListener("click", (e: MouseEvent) => {
     const targetElement = e.target as HTMLElement;
 
@@ -14,4 +13,4 @@ const toggleClick = (element: HTMLElement) => {
   });
 };
 
-export default toggleClick;
+export default onSliderClick;

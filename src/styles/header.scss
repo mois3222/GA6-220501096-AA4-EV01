@@ -6,6 +6,7 @@
   &__nav {
     position: fixed;
     width: 100%;
+    z-index: 4;
     background-color: v.$primary-color;
     border-bottom-left-radius: 30px 20px;
     border-bottom-right-radius: 30px 20px;
@@ -19,16 +20,13 @@
     margin: 0;
   }
 
-  &__a {
-    @extend %flex;
-    flex-direction: column;
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: v.$transition-speed;
+  &__bottom {
+    @extend %bottom;
+  }
 
-    &:hover {
-      filter: grayscale(0) opacity(1);
-    }
+  &__a {
+    @extend .header__bottom;
+    text-decoration: none;
   }
 
   &__svg {
@@ -45,7 +43,7 @@
   &__nav--slider {
     background-color: v.$secondary-color;
     position: absolute;
-    z-index: -1;
+    z-index: 3;
     width: 200%;
     transition: 500ms all ease-out;
     border: 1px solid v.$primary-color;

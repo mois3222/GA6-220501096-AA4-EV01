@@ -1,7 +1,15 @@
 @use "./vars.scss" as v;
+@use "./extend.scss";
 .main {
+  @extend %flex;
   position: relative;
-  z-index: -5;
   min-height: 100vh;
   background-color: v.$background;
+
+  .error404 {
+    &__a {
+      text-decoration: none;
+      color: v.$theme-color;
+    }
+  }
 }
