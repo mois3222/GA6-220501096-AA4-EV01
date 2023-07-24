@@ -16,7 +16,7 @@
     @extend %flex;
     justify-content: space-around;
     list-style: none;
-    padding: 0.2em 0;
+    padding: 0.5em 0;
     margin: 0;
   }
 
@@ -70,7 +70,7 @@
     position: absolute;
     z-index: 3;
     width: 200%;
-    transition: 500ms all ease-out;
+    transition: v.$transition-slow;
     border: 1px solid v.$primary-color;
   }
 
