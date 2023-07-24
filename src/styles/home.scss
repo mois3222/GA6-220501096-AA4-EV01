@@ -38,8 +38,15 @@
     }
   }
   &__div--button {
+    @extend %flex;
+    justify-content: space-between;
     @extend %cleanMP;
     margin: 2em 0;
     width: 100%;
+  }
+
+  &__button--next {
+    text-decoration: none;
+    color: v.$danger-color;
   }
 }

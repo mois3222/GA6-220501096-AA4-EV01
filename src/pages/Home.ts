@@ -26,6 +26,7 @@ class Home {
           </div>
             <div class="home__div--button">
               <button class="home__button">Show More..</button>
+              <a class="home__button--next" href="#/mysql">Next</a>
             </div>
         </div>
     `;
