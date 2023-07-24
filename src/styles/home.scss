@@ -1,0 +1,36 @@
+@use "./extend.scss";
+@use "./vars.scss" as v;
+.home {
+  font-family: v.$theme-font;
+  color: v.$theme-color;
+  margin: 0 1em;
+
+  &__div {
+    @extend %flex-col;
+    padding: 1em;
+  }
+
+  &__h2 {
+    margin-top: 2em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__span {
+    margin: 0.5em 0;
+  }
+
+  .desc {
+    display: flex;
+    gap: 34px;
+    width: 200%;
+
+    &__p {
+      text-align: center;
+    }
+  }
+  &__div--button {
+    @extend %cleanMP;
+    width: 100%;
+  }
+}

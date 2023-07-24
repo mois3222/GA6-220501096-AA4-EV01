@@ -5,11 +5,4 @@
   position: relative;
   min-height: 100vh;
   background-color: v.$background;
-
-  .error404 {
-    &__a {
-      text-decoration: none;
-      color: v.$theme-color;
-    }
-  }
 }

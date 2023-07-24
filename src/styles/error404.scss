@@ -1,0 +1,21 @@
+@use "./vars.scss" as v;
+@use "./extend.scss";
+
+.error404 {
+  &__div {
+    @extend %flex-col;
+  }
+  &__a {
+    @extend %flex-col;
+    font-family: v.$theme-font;
+    text-decoration: none;
+    color: v.$theme-color;
+  }
+  &__span {
+    text-align: center;
+  }
+  &__p {
+    @extend %button;
+    color: v.$danger-color;
+  }
+}

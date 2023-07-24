@@ -15,7 +15,7 @@ class Header {
             </a>
           </li>
           <li class="header__li">
-            <button class="header__button menu">
+            <button class="header__button">
               <div></div>
               <div></div>
               <div></div>

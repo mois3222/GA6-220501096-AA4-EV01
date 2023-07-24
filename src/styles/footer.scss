@@ -1,6 +1,7 @@
 @use "./extend.scss";
 @use "./vars.scss" as v;
 .footer {
+  bottom: 0;
   @extend %flex-col;
   background-color: v.$footer;
   font-family: v.$theme-font;
@@ -13,12 +14,20 @@
   &__h3 {
     @extend %cleanMP;
     font-weight: bolder;
+    margin: 1em 0;
   }
 
   &__p {
     @extend %cleanMP;
     text-align: center;
     font-size: v.$min;
+  }
+
+  &__p--desc {
+    @extend %cleanMP;
+    text-align: center;
+    font-size: v.$min;
+    padding: 0.5em;
   }
 
   &__ul {
