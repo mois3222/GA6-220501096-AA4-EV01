@@ -4,6 +4,7 @@ export type Setps = {
   alt: string;
   description: string;
   bibliographicCitation: string;
+  hrfe: string | number;
 };
 export interface ImplementTemplate {
   setpsArticules: Setps[];

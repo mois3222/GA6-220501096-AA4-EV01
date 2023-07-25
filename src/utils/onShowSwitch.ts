@@ -6,6 +6,7 @@ const onShowSwitch = (element: HTMLDivElement) => {
 
     if (targetElement && targetElement.classList.contains("home__button")) {
       let newToggle = (toggle = !toggle);
+      if (!element.style) return;
       element.style.transform = `translateX(${newToggle ? 26 : -26}%)`;
       targetElement.textContent = `Show ${newToggle ? "More.." : "Less.."}`;
     }

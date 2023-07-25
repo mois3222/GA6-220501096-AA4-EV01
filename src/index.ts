@@ -5,6 +5,7 @@ import Footer from "./templates/Footer";
 import onSliderClick from "./utils/onSliderClick";
 import onShowSwitch from "./utils/onShowSwitch";
 import Router from "./routes/Routes";
+import onToggleButton from "./utils/onTogglebutton";
 
 const website = (e: Event) => {
   e.preventDefault();
@@ -22,11 +23,18 @@ const website = (e: Event) => {
 
   router.returnHTMLRoutes(document.querySelector<HTMLElement>(".main")!);
 
-  onSliderClick(
-    document.querySelector<HTMLElement>("#nav")!,
-    document.querySelector<HTMLButtonElement>(".header__button")!
-  );
-  onShowSwitch(document.querySelector<HTMLDivElement>(".home__div--desc")!);
+  try {
+    onSliderClick(
+      document.querySelector<HTMLElement>("#nav")!,
+      document.querySelector<HTMLButtonElement>(".header__button")!
+    );
+    onShowSwitch(document.querySelector<HTMLDivElement>(".home__div--desc")!);
+  } catch (error) {
+    onToggleButton(
+      document.querySelector<HTMLDivElement>(".template__carrousel")!,
+      document.querySelector<HTMLDivElement>(".walkthrough__div--carrousel")!
+    );
+  }
 };
 
 window.addEventListener("load", website);
