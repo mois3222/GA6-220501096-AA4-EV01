@@ -12,7 +12,34 @@ class MySQL extends Template {
       hrfe: 2,
     });
     this.pushSetps({
-      subTitle: "mysql",
+      subTitle: "mysqlone",
+      src: "https://icloudseven.com/wp-content/uploads/2020/12/desarrollo-software-i-cloud-seven-3.png",
+      alt: "imgsql",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis a architecto, eaque nobis quidem.",
+      bibliographicCitation: "this's a desc",
+      hrfe: 2,
+    });
+    this.pushSetps({
+      subTitle: "mysqlonethree",
+      src: "https://icloudseven.com/wp-content/uploads/2020/12/desarrollo-software-i-cloud-seven-3.png",
+      alt: "imgsql",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis a architecto, eaque nobis quidem.",
+      bibliographicCitation: "this's a desc",
+      hrfe: 2,
+    });
+    this.pushSetps({
+      subTitle: "mysqlonethree",
+      src: "https://icloudseven.com/wp-content/uploads/2020/12/desarrollo-software-i-cloud-seven-3.png",
+      alt: "imgsql",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis a architecto, eaque nobis quidem.",
+      bibliographicCitation: "this's a desc",
+      hrfe: 2,
+    });
+    this.pushSetps({
+      subTitle: "mysqlonethree",
       src: "https://icloudseven.com/wp-content/uploads/2020/12/desarrollo-software-i-cloud-seven-3.png",
       alt: "imgsql",
       description:
@@ -30,13 +57,6 @@ class MySQL extends Template {
       ""
     );
     this.createdArticle();
-    this.createFace(
-      `MySQL, What is it?`,
-      MySQLImage,
-      "msqlImage",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis a architecto, eaque nobis quidem.",
-      ""
-    );
     this.addArticles();
     this.HTMLCreateCarrouselElement.appendChild(this.HTMLCreateSectionElement);
     this.HTMLCreateCarrouselElement.appendChild(

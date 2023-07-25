@@ -56,19 +56,18 @@
   }
 
   .walkthrough {
-    @extend %flex-col;
+    display: flex;
+    align-items: center;
     min-height: 100vh;
     overflow: hidden;
     &__div--carrousel {
-      @extend %flex;
       @extend %animation;
-      width: 300%;
     }
     &__article {
+      width: 390px;
       display: grid;
       padding-left: v.$md;
       place-items: center;
-      width: calc(100% / 2);
       height: auto;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);

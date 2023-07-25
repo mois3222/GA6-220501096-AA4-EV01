@@ -4,6 +4,7 @@ import Header from "./templates/Header";
 import Footer from "./templates/Footer";
 import onSliderClick from "./utils/onSliderClick";
 import onShowSwitch from "./utils/onShowSwitch";
+import onStepsClick from "./utils/onSetpsClick";
 import Router from "./routes/Routes";
 import onToggleButton from "./utils/onTogglebutton";
 
@@ -31,7 +32,9 @@ const website = (e: Event) => {
     onShowSwitch(document.querySelector<HTMLDivElement>(".home__div--desc")!);
   } catch (error) {
     onToggleButton(
-      document.querySelector<HTMLDivElement>(".template__carrousel")!,
+      document.querySelector<HTMLDivElement>(".template__carrousel")!
+    );
+    onStepsClick(
       document.querySelector<HTMLDivElement>(".walkthrough__div--carrousel")!
     );
   }

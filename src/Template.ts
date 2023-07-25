@@ -75,7 +75,7 @@ class Template {
             </aside>
             <div class="walkthrough__div">
               <button class="walkthrough__button">Previous</button>
-              <button class="walkthrough__button--next">Next</button>
+              <button class="walkthrough__button--toggle">....</button>
               <a class="walkthrough__a" href="#/${hrfe}">Follow page!</a>
             </div>
             <footer class="walkthrough__footer">
@@ -96,6 +96,10 @@ class Template {
         </div>
     `;
     return this.HTMLCreateSectionTwoElement;
+  }
+
+  getSepts() {
+    return this.articles;
   }
 
   returnSections(): HTMLDivElement {
