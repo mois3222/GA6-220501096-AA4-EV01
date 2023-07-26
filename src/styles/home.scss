@@ -49,4 +49,9 @@
     text-decoration: none;
     color: v.$danger-color;
   }
+
+  &__button {
+    @extend %buttonStyle;
+    width: 250px;
+  }
 }

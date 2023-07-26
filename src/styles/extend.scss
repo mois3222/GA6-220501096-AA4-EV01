@@ -30,13 +30,34 @@
   align-items: start;
   flex-flow: row nowrap;
   width: 200%;
-  //   transform: translateX(50%);
   transition: v.$transition-slow;
 }
 
 %button {
   @extend %flex-col;
 
+  filter: grayscale(100%) opacity(0.7);
+  transition: v.$transition-speed;
+
+  &:hover {
+    filter: grayscale(0) opacity(1);
+  }
+}
+
+%buttonStyle {
+  @extend %flex;
+  justify-content: space-around;
+  color: v.$danger-color;
+  background: transparent;
+  width: 80px;
+  border-radius: 4px;
+  padding: 4px 0;
+
+  svg {
+    fill: v.$danger-color;
+  }
+
+  border: 1px solid v.$danger-color;
   filter: grayscale(100%) opacity(0.7);
   transition: v.$transition-speed;
 

@@ -46,7 +46,10 @@ class Template {
     </div>
       <div class="face__div--button">
         <a class="face__button--previous"  href="${href}">Previous</a>
-        <button class="face__button--next">Next</button>
+        <button class="face__button--next">
+          <span class="face__button--span">Next</span>
+          <svg class="face__button--svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+        </button>
       </div>
     </div>
     
@@ -65,21 +68,25 @@ class Template {
         return `
         <article class="walkthrough__article">
             <header class="walkthrough__header">
-                <h2 class="walkthrough__h2"><small><strong>${(index += 1)}.</strong>Setp</small> ${subTitle}</h2>
-                <p class="walkthrough__p">
-                  ${description}
-                </p>
+                <h3 class="walkthrough__h3">${subTitle}</h3>
+                <p class="walkthrough__p">Step: ${(index += 1)}</p>
             </header>
             <aside class="walkthrough__aside">
-              <img class="walkthrough__img" src="${src}" alt="${alt}" height="100" width="200" />
+              <img class="walkthrough__img" src="${src}" alt="${alt}" />
             </aside>
             <div class="walkthrough__div">
-              <button class="walkthrough__button">Previous</button>
+              <button class="walkthrough__button">
+                <span class="walkthrough__span" >Previous</span>
+                <svg class="walkthrough__svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/></svg>
+              </button>
               <button class="walkthrough__button--toggle">....</button>
               <a class="walkthrough__a" href="#/${hrfe}">Follow page!</a>
             </div>
             <footer class="walkthrough__footer">
-                <p class="walkthrough__p">
+                <p class="walkthrough__p--footer">
+                  ${description}
+                </p>
+                <p class="walkthrough__p--footer">
                     ${bibliographicCitation}
                 </p>
             </footer>

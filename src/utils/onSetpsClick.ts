@@ -21,7 +21,7 @@ const onStepsClick = (HTMLDivElement: HTMLDivElement) => {
         console.log(counted);
 
         HTMLDivElement.style.transform = `translateX(${
-          counted < numHTML.length ? counted * -(100 / numHTML.length) : 0
+          counted < numHTML.length ? counted * -(100 / numHTML.length || 1) : 0
         }%)`;
 
         console.log(numHTML.length);
