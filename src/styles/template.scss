@@ -137,11 +137,13 @@
     &__p--footer {
       margin: 0.5em;
       color: v.$theme-primary;
+      font-size: v.$sm;
     }
     &__h3 {
       @extend %flex;
       @extend %clean;
       height: 90%;
+      font-size: v.$sm;
       background-color: v.$background;
       padding: 0 0.5em;
     }

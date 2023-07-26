@@ -4,7 +4,7 @@ class Footer {
             <div class="footer__div">
                 <h3 class="footer__h3">Walkthrough MySQL</h3>
                 <p class="footer__p--desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit!
+                Esto es un trabajo para el Sena Gestion Administrativa.
                 </p>
                 <ul class="footer__ul">
                     <li class="footer__li">
@@ -28,7 +28,7 @@ class Footer {
                 </ul>
             </div>
             <div class="footer__div--buttom">
-                <p class="footer__p">copyright &copy;2023. designe by <span class="footer__span">TheMoidbytes</span></p>
+                <p class="footer__p">copyright &copy;2023. designe by <span class="footer__span">Team Sena</span></p>
             </div>
         `;
   }
