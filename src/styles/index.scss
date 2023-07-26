@@ -5,6 +5,8 @@
 @forward "./home.scss";
 @forward "./template.scss";
 
-body {
-  overflow-x: hidden;
+#app {
+  overflow: hidden;
+  width: 387px;
+  max-height: max-content;
 }

@@ -1,7 +1,6 @@
 @use "./extend.scss";
 @use "./vars.scss" as v;
 .footer {
-  bottom: 0;
   @extend %flex-col;
   background-color: v.$footer;
   font-family: v.$theme-font;
